@@ -56,6 +56,13 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8
+      - name: Verify pnpm installation
+        if: steps.detect-package-manager.outputs.manager == 'pnpm'
+        run: |
+          echo "Attempting to verify pnpm installation..."
+          pnpm --version
+          which pnpm
+          echo "pnpm verification complete."
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
