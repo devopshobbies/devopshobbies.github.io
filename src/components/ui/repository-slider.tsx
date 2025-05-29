@@ -201,7 +201,7 @@ export default function RepositorySlider({
                   />
                   <span className="text-white/80 text-xs">{repo.language}</span>
                 </div>
-                <span className="text-white/60 text-xs">{repo.updated}</span>
+                <span className="text-devops-orange/60 text-xs">{repo.updated}</span>
               </div>
             </div>
           </div>

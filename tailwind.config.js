@@ -50,8 +50,8 @@ module.exports = {
           5: 'hsl(var(--chart-5))',
         },
         devops: {
-          orange: '#FF7A00',
-          darkBlack: '#1E1E1E',
+          orange: '#ec660e',
+          black: '#1E1E1E',
         },
       },
     },

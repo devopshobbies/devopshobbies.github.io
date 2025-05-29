@@ -134,7 +134,7 @@ export default function Home() {
     },
   ]
   return (
-    <>
+    <div id="content">
       <BentoGrid className="lg:grid-rows-3">
         {features.map((feature) => (
           <BentoCard key={feature.name} {...feature} />
@@ -147,7 +147,6 @@ export default function Home() {
         showNavigationDots={true}
         showNavigationArrows={true}
       />
-
-    </>
+    </div>
   )
 }

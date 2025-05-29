@@ -5,6 +5,7 @@ import { cn } from '@/lib'
 
 import { FloatingDock } from '../ui/floating-dock'
 import { Spotlight } from '../ui/Spotlight'
+import { ModeToggle } from '../mode-toggle'
 
 export type IconProps = React.HTMLAttributes<SVGElement>
 
@@ -56,7 +57,7 @@ function Hero() {
     {
       title: 'GitHub',
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <ModeToggle />
       ),
       href: '#',
     },
@@ -81,7 +82,7 @@ function Hero() {
           <FloatingDock items={links} />
         </div>
 
-        <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
+        <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-devops-orange bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
           DevOps <br /> Hobbies
         </h1>
         <p className="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-300">
