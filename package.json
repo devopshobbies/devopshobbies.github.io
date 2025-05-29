@@ -2,9 +2,9 @@
   "name": "devopshobbies-landing",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@8.15.0",
   "description": "DevOps Hobbies Landing Page",
   "author": "Mehdi Rahimi <mehdirahimi.dev@gmail.com>",
-  "packageManager": "pnpm@8.15.0",
   "license": "MIT",
   "keywords": [
     "nextjs",

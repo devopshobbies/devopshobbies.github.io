@@ -1,11 +1,12 @@
 import './globals.css'
-
-import type { Metadata } from 'next'
-import { Layout } from '@/components'
-import { Inter } from 'next/font/google'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+
 import { config } from '@fortawesome/fontawesome-svg-core'
-import { ThemeProvider } from "@/components/theme-provider"
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+
+import { Layout } from '@/components'
+import { ThemeProvider } from '@/components/theme-provider'
 
 const inter = Inter({ subsets: ['latin'] })
 config.autoAddCss = false
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" >
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <Layout>{children}</Layout>
         </ThemeProvider>
       </body>

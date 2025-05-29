@@ -11,6 +11,7 @@ export default defineConfig(
     rules: {
       '@stylistic/arrow-parens': 'off',
       'import/no-anonymous-default-export': 'off',
+      '@eslint-react/no-children-map': 'off',
     },
   },
   {
