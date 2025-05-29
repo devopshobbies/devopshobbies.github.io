@@ -1,11 +1,11 @@
-import { IconBrandGithub, IconBrandX, IconExchange, IconHome, IconTerminal2 } from '@tabler/icons-react'
+import { IconBrandX, IconExchange, IconHome, IconTerminal2 } from '@tabler/icons-react'
 import * as React from 'react'
 
 import { cn } from '@/lib'
 
+import { ModeToggle } from '../mode-toggle'
 import { FloatingDock } from '../ui/floating-dock'
 import { Spotlight } from '../ui/Spotlight'
-import { ModeToggle } from '../mode-toggle'
 
 export type IconProps = React.HTMLAttributes<SVGElement>
 
