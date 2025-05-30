@@ -2,6 +2,7 @@ import { BellIcon, CalendarIcon, FileTextIcon, GlobeIcon, InputIcon } from '@rad
 
 import { BentoCard, BentoGrid } from '@/components/magicui/bento-grid'
 import RepositorySlider from '@/components/ui/repository-slider'
+import DevOpsRoadmap from '@/components/ui/roadmap'
 import { GitHubOrganizationRepos } from '@/lib/repository'
 
 export default async function Home() {
@@ -70,6 +71,8 @@ export default async function Home() {
         showNavigationDots={true}
         showNavigationArrows={true}
       />
+      <DevOpsRoadmap />
+
     </div>
   )
 }
