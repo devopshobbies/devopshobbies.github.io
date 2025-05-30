@@ -17,7 +17,7 @@ function AppFooter() {
             2024 Devops Hobbies
           </p>
         </div>
-        <div className="flex pt-2">
+        <div className="flex pt-2 max-sm:flex-wrap">
           <Link href="#" className="pr-4 flex items-center "><span className="underline">Pricing</span></Link>
           <Link href="#" className="pr-4 flex items-center "><span className="underline">Contact</span></Link>
           <Link href="#" className="pr-4 flex items-center "><span className="underline">Twitter</span></Link>
