@@ -75,7 +75,7 @@ export class GitHubOrganizationRepos {
     }
   }
 
-async getTopStarredRepos(orgName: string, maxRepos = 10): Promise<Repository[]> {
+  async getTopStarredRepos(orgName: string, maxRepos = 10): Promise<Repository[]> {
     try {
       const response = await axios.get<GitHubRepo[]>(
         `${this.apiUrl}/orgs/${orgName}/repos?per_page=${maxRepos}`, // Removed the sorting from the API call for now
